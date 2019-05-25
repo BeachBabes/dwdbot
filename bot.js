@@ -44,15 +44,6 @@ client.on('message', async msg => {
         msg.channel.send(badword)
         .then(msg.delete(5000))
     }
-    if(msg.content = ('ass'))
-    {
-        var badword = new discord.RichEmbed()
-        .addField('Message Deleted!', `${msg.author} your message contained profanity! Please refrain from using this language in the future.`)
-        .setFooter(' | Beta Version 0.1')
-        msg.delete()
-        msg.channel.send(badword)
-        .then(msg.delete(5000))
-    }
     if(msg.content.includes('shit'))
     {
         var badword = new discord.RichEmbed()
